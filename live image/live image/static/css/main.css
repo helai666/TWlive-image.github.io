@@ -1,0 +1,37 @@
+
+body, html {
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: lightblue;
+    
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+  }
+  
+  
+  
+  .img-filter {
+    filter: grayscale(100%);
+  }
+  
+  .img-fit {
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+  }
+  
