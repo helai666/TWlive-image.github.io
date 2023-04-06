@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Streaming Video</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='css/main.css') }}">
+  </head>
+  <body>
+<div class="content">
+    <h1> <b>即時車流顯示</b> </h1>
+    <form action="/io" method="POST">
+      <input type="text" name="content" id="content" placeholder="輸入影像連結"><!--輸入對話框-->
+      <input type="submit" value="確認"><!--提交對話框-->
+    </form>
+    <p></p>
+    <p></p>
+    <div>
+      <img src="{{ url_for('video_feed') }}">
+    </div>
+</div>
+  </body>
+</html>
